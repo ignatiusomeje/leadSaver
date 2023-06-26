@@ -56,7 +56,7 @@ exportData.addEventListener("click", (e) => {
     XLSX.utils.sheet_add_aoa(worksheet, [["Email of Lead"]], { origin: "A1" });
 
     /* calculate column width */
-    const max_width = rows.reduce((w, r) => Math.max(w, r.name.length), 10);
+    const max_width = leadsSaved.reduce((w, r) => Math.max(w, r.leadsEmail.length), 10);
     worksheet["!cols"] = [ { wch: max_width } ];
 
     /* create an XLSX file and try to save to Presidents.xlsx */

@@ -1,0 +1,16 @@
+{
+  "name": "Lead Saver",
+  "version": "1.0",
+  "description":"Save your Leads here for future use",
+  "author":"Ignatius Omeje",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_title": "Lead Saver",
+    "default_popup": "index.html"
+  },
+  "manifest_version": 3
+  
+}
